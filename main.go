@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	piscine "piscine/3"
+	piscine "piscine/6"
 )
 
 func main() {
-	fmt.Println(piscine.RepeatAlpha("abC"))
-	fmt.Println(piscine.RepeatAlpha("Choumi."))
-	fmt.Println(piscine.RepeatAlpha(""))
-	fmt.Println(piscine.RepeatAlpha("abacadaba 01!"))
+	fmt.Println(piscine.RevConcatAlternate([]int{1, 2, 3}, []int{4, 5, 6}))
+	fmt.Println(piscine.RevConcatAlternate([]int{1, 2, 3}, []int{4, 5, 6, 7, 8, 9}))
+	fmt.Println(piscine.RevConcatAlternate([]int{1, 2, 3, 9, 8}, []int{4, 5}))
+	fmt.Println(piscine.RevConcatAlternate([]int{1, 2, 3}, []int{}))
+	// fmt.Println(piscine.RevConcatAlternate([]int{}, []int{4, 5, 6}))
 }
